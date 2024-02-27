@@ -1,0 +1,54 @@
+.navbar {
+    background: var(--primary-bg);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .input {
+        background-color: #fff;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+
+        input {
+            background: transparent;
+        }
+    }
+
+    p {
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .ham {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    .nav {
+
+
+
+        p {
+            display: none;
+        }
+
+        .ham {
+            display: block;
+            cursor: pointer;
+        }
+    }
+}

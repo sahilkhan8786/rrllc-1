@@ -1,0 +1,144 @@
+.deals {
+    margin: 30px 0;
+
+    .heading {
+        font-size: 32px;
+        line-height: 44px;
+        color: #2C384A;
+        font-weight: 400;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin-top: 2rem;
+
+
+        article {
+
+            padding: 2rem 1rem;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+
+            .imgContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 3rem;
+            }
+
+            div {
+                display: flex;
+                gap: 25px;
+
+
+                .offer {
+                    background: #F2F4F7;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    padding: 2px;
+                    color: #074786;
+                }
+
+
+            }
+
+            .subheading {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #626E79;
+                text-align: center;
+                margin: 1rem 0;
+            }
+
+            p {
+                margin: 0.5rem 0;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #626E79;
+            }
+
+            button {
+                margin-top: 10px;
+                border-radius: 12px;
+                background: #1B88F4;
+                color: #fff;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+.price {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #5C6874;
+}
+
+.dimmedprice {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9FA9B3;
+}
+
+.off {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #EF4C5D;
+}
+
+.priceBox {
+    display: flex;
+    align-items: center;
+
+}
+
+
+@media screen and (max-width:900px) {
+    .deals {
+
+        .container {
+
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center;
+
+
+
+
+        }
+    }
+
+
+}
+
+@media screen and (max-width:550px) {
+    .deals {
+        .heading {
+            font-size: 25px;
+        }
+
+        .container {
+
+            grid-template-columns: repeat(1, 1fr);
+            place-items: center;
+
+
+
+
+        }
+    }
+
+
+}

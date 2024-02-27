@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg: #212731;
+  --bg: #FBFCFD;
+  --heading-color: #2C384A;
+  --dimmed-text: #4B5665;
+}
+
+body {
+  background: var(--bg);
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0rem 2rem;
+}
+
+.dimmed {
+  color: var(--dimmed-text);
+  size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
